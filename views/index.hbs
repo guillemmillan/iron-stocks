@@ -1,7 +1,8 @@
 <section>
   {{#each data }}
   <div>
-    <button type="submit"><a href="/delete/{{this._id}}">DELETE</a></button>
+    <button class="del" type="submit"><a href="/delete/{{this._id}}">DELETE {{this.company}}</a></button>
+    <h2>{{this.company}}</h2>
     <canvas id="{{company}}">
     </canvas>
   </div>
